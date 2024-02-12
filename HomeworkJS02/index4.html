@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <input class="inp1" type="number" placeholder="$ you have">
+    <input class="inp2" type="number" placeholder="$ per bar">
+
+    <button class="btn1">result</button>
+    <div class="out1">Amount of bars you can afford : </div>
+    <div class="out2">cash left : </div>
+
+    <script>
+        let btn1 = document.querySelector('.btn1');
+        let out1 = document.querySelector('.out1');
+        let inp2 = document.querySelector('.inp2');
+        let inp1 = document.querySelector('.inp1');
+        let out2 = document.querySelector('.out2');
+
+
+
+
+        btn1.onclick = () => {
+            let res = inp1.value / inp2.value
+            out1.innerHTML = res;
+            out2.innerHTML = inp1.value % inp2.value
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

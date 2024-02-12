@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input class="inp1" type="number" placeholder="enter here">
+    <button class="btn1">result</button>
+
+    <div class="out1"></div>
+
+    <script>
+
+        let inp1 = document.querySelector('.inp1')
+
+        let btn1 = document.querySelector('.btn1')
+
+        let out1 = document.querySelector('.out1')
+
+        if (btn1) {
+            btn1.onclick = () => {
+                if (+inp1.value < 11) {
+                    out1.innerHTML = 'kid'
+                }
+                else if (+inp1.value >= 12 && +inp1.value <= 17) {
+                    out1.innerHTML = 'teen'
+                }
+                else if (+inp1.value >= 18 && +inp1.value <= 59) {
+                    out1.innerHTML = 'adult'
+                }
+                else if (+inp1.value > 60) {
+                    out1.innerHTML = 'too old, go home'
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
