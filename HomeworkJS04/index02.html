@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input class="inp" type="number">
+    <input class="inp2" type="number">
+    <button class="btn">Press here</button>
+    <div class="out"></div>
+
+
+
+    <script>
+
+
+
+        let inp = document.querySelector('.inp');
+        let inp2 = document.querySelector('.inp2');
+        let btn = document.querySelector('.btn');
+        let out = document.querySelector('.out');
+
+        function count() {
+            if (inp.value < inp2.value) {
+                out.innerHTML = '-1';
+            } else if (inp.value > inp2.value) {
+                out.innerHTML = '1';
+            }
+            else {
+                out.innerHTML = '0';
+            }
+        }
+
+        btn.onclick = () => {
+            count();
+        }
+
+
+
+    </script>
+</body>
+
+</html>

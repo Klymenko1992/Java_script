@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="out"></div>
+    <button class="btn">Count</button>
+
+    <script>
+        let out = document.querySelector('.out');
+        let btn = document.querySelector('.btn');
+
+
+        function countArg() {
+            const numberOfArguments = arguments.length;
+            out.innerHTML = `Arguments: ${numberOfArguments}`;
+        }
+
+
+        btn.onclick = function () {
+            countArg(1, 2, 3);
+        };
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
